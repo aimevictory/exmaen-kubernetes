@@ -24,5 +24,10 @@ ingress:
   tlsSecret: aimevictorydarnel-nginx-tls
 service:
   type: ClusterIP
+  ports:
+    - name: http
+      port: 8010
+      targetPort: 8010
+
 
 
